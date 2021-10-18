@@ -1,6 +1,5 @@
 console.log("JS Loaded")
 var formEl = document.querySelector("#task-form");
-
 var tasksToDoEl = document.querySelector("#tasks-to-do");
 
 var createTaskHandler =function(event) {
@@ -15,13 +14,6 @@ var createTaskHandler =function(event) {
 };
 formEl.addEventListener("submit", createTaskHandler);
 
- /*var createTaskHandler =function(event) {
-    event.preventDefault()
-    var userEntry=document.getElementById("task-type").value
-    console.log(userEntry, "Test")
-    var listItemEl =document.cre 
-}
-*/
-buttonEl.addEventListener("click", createTaskHandler);
+
 
 
