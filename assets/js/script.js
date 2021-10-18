@@ -2,7 +2,7 @@ console.log("JS Loaded")
 var formEl = document.querySelector("#task-form");
 var tasksToDoEl = document.querySelector("#tasks-to-do");
 
-var createTaskHandler =function(event) {
+var taskFormHandler =function(event) {
     event.preventDefault()
     var userEntry = document.getElementById("task-name").value
     var userTask=document.getElementsByName("task-type")[0].value
@@ -11,8 +11,9 @@ var createTaskHandler =function(event) {
     listItemEl.className = "task-item";
     listItemEl.textContent = "This is a new task." + userEntry + '- ' + userTask;
     tasksToDoEl.appendChild(listItemEl);
+       
 };
-formEl.addEventListener("submit", createTaskHandler);
+formEl.addEventListener("submit", taskFormHandler);
 
 
 
